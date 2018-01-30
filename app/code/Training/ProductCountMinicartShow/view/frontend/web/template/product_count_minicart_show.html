@@ -1,4 +1,10 @@
 <div>
+    <!-- ko if: productCountMinicartShow().has_minicart_items  -->
+    <h2>Count products show in minicart</h2>
+    <!-- /ko -->
+
+
     <div visible="log()"></div>
+    <span data-bind="html: productCountMinicartShow().has_minicart_items"></span>
 </div>
 

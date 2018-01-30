@@ -49,7 +49,7 @@ class ProductCountMinicartShow implements SectionSourceInterface
      */
     public function getSectionData()
     {
-        $itemsCount = $this->checkoutSession->getQuote()->getItemsCount();
+        /*$itemsCount = $this->checkoutSession->getQuote()->getItemsCount();
         $maxProductsMinicartShow = $this->scopeConfig->getValue(self::XML_PATH_CHECKOUT_MAX_ITEMS_DISPLAY_COUNT);
         $hasMinicartItems = $itemsCount > 0;
         $isFull = ($maxProductsMinicartShow - $itemsCount) === 0;
@@ -60,6 +60,7 @@ class ProductCountMinicartShow implements SectionSourceInterface
             'is_full' => $isFull,
             'minicart_already_show_max' => $minicartAlreadyShowMax,
             'amount_left' => $maxProductsMinicartShow - $itemsCount,
-        ];
+        ];*/
+        return ['has_minicart_items' =>111];
     }
 }
